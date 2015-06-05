@@ -8,7 +8,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -16,34 +16,31 @@
     <!-- endbuild -->
   </head>
   <body ng-app="hunterApp">
+    <header class="header">你看不见的！</header>
     <section class="main" ui-view></section>
     <aside class="menu">
-      <nav class="nav">
-        <ul class="nav_ul">
-            <li><a ui-sref="creater" class="cur">Creater</a></li>
-            <li><a ui-sref="main">Main</a></li>
-            <li><a ui-sref="about">About</a></li>
-        </ul>
-    </nav>
+        <nav class="nav">
+            <ul class="nav_ul">
+                <li><a ui-sref="creater" ui-sref-active="cur">Creater</a></li>
+                <li><a ui-sref="about" ui-sref-active="cur">About</a></li>
+            </ul>
+        </nav>
     </aside>
     <div class="menu_cover"></div>
-
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/controllers/creater.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+
         <!-- endbuild -->
 </body>
 </html>

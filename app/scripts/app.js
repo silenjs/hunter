@@ -6,9 +6,9 @@
 *
 * Main module of the application.
 */
-var hunterApp = angular.module('hunterApp',['ui.router']);
+var hunterApp = angular.module('hunterApp',['ui.router','moduleCreater','moduleAbout']);
 hunterApp.config(function($stateProvider,$urlRouterProvider){
-    // $urlRouterProvider.otherwise('/main');
+    $urlRouterProvider.otherwise('/about');
     $stateProvider
         .state('creater',{
             url:'/creater',
