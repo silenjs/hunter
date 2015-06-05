@@ -13,9 +13,8 @@ modCreater.controller('CreaterController',function($scope){
         if(curPage<totalPage){
             $('#wraper').css('transform','translateY('+-curPage*bodyH+'px)');
             curPage++;
-        }else{
-            $('#nextTrigger').hide();
         }
+        $('#nextTrigger')[curPage>=totalPage?'hide':'show']();
     }
     window.onresize =  initPage;
 

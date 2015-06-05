@@ -20,5 +20,6 @@ a:hover {color:#249ff1;}
 .nav_ul .cur {background: #67BAAE;}
 .nav_next {
     position: fixed;
+    left:90%;
     bottom: 25px;
 }
