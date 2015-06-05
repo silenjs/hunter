@@ -18,7 +18,7 @@ a:hover {color:#249ff1;}
 .nav_ul li {height: 50px;}
 .nav_ul a {display: block; padding: 0 20px; color: #fff; line-height: 50px; border-bottom: 1px #fff solid;}
 .nav_ul .cur {background: #67BAAE;}
-.nav_next {
+.next_cover {
     position: fixed;
     left:90%;
     bottom: 25px;
