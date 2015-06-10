@@ -1,0 +1,17 @@
+nav{
+    background: #eee;
+}
+.nav-contact{
+    padding-top:16px;
+}
+header{
+    background: #eee;
+    padding-top:76px;
+}
+footer{
+    border-top: 2px solid #eee;
+}
+.main-sec-content{
+    border-left:2px solid #eee;
+    padding-left:8px;
+}

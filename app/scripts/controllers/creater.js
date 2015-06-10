@@ -12,7 +12,7 @@ modCreater.directive('creater',function(){
             var initPage = function(){
                 bodyW = window.innerWidth,bodyH = window.innerHeight;
                 $('#wraper').css({'width':bodyW,'height':bodyH});
-                $('#wraper form').each(function(index,item){
+                $('.wraperinner').each(function(index,item){
                     $(item).css({'width':bodyW,'height':bodyH});
                 })
             }
