@@ -23,3 +23,10 @@ a:hover {color:#249ff1;}
     left:90%;
     bottom: 25px;
 }
+.wrap-form {
+  position:absolute;
+  width:830px;
+  left:20%;
+  top:25%;
+  background: #7ADDCF;
+}
